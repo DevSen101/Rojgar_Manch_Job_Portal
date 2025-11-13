@@ -1,0 +1,60 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>Job Platforms Hub</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div class="wrap">
+  <header>
+   <h1>Job Platforms Hub</h1>
+   <div class="controls">
+    <button class="btn" id="openAll">Open All</button>
+    <button class="btn ghost" id="exportBtn">Export</button>
+    <button class="btn ghost" id="importBtn">Import</button>
+    <button class="btn ghost" id="addBtn">Add Platform</button>
+   </div>
+  </header>
+  
+  <section class="card">
+   <div style="display:flex;gap:8px;align-items:center">
+    <input id="search" placeholder="Filter by name or domain" style="flex:1" />
+    <select id="sortBy">
+     <option value="default">Sort: Default</option>
+     <option value="name">Sort: Name</option>
+     <option value="recent">Sort: Recent</option>
+    </select>
+   </div>
+   
+   <div class="list" id="platformList"></div>
+   
+   <footer>Click a link to open the platform in a new tab. Use <strong>Open All</strong> to quickly open every saved
+    platform.</footer>
+   </section>
+   
+   <!-- modal -->
+   <div id="modal"
+   style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center">
+   <div style="background:var(--card);padding:18px;border-radius:12px;max-width:560px;width:95%">
+    <h2 id="modalTitle">Add Platform</h2>
+    <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px">
+     <input id="pName" placeholder="Platform name (e.g. Naukri)" />
+     <input id="pLink" placeholder="Full URL (https://...)" />
+     <div style="display:flex;gap:8px;justify-content:flex-end">
+      <button class="btn ghost" id="cancel">Cancel</button>
+      <button class="btn" id="save">Save</button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ 
+ 
+ <script src="script.js"></script>
+</body>
+
+</html>
