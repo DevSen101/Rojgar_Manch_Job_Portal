@@ -1,4 +1,4 @@
-# Job Platforms Hub
+# Rojgar Manch
 
 A simple single-page HTML dashboard to manage and open all major job-search platforms from one place.
 Instead of visiting each website manually (Naukri, Indeed, Internshala, etc.), this dashboard centralizes all links and allows you to open any job platform with a single click.
